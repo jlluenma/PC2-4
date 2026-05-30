@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { InicioComponent } from '../inicio.component/inicio.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-productos.component',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './productos.component.html',
   styleUrl: './productos.component.css',
 })

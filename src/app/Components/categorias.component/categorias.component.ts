@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { InicioComponent } from '../inicio.component/inicio.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-categorias.component',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './categorias.component.html',
   styleUrl: './categorias.component.css',
 })
