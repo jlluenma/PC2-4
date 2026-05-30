@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { VentaService } from '../../Service/ventas.service/venta.service';
+import { Venta } from '../../Models/Venta.model';
 
 @Component({
   selector: 'app-ventas.component',
@@ -7,4 +9,16 @@ import { RouterModule } from '@angular/router';
   templateUrl: './ventas.component.html',
   styleUrl: './ventas.component.css',
 })
-export class VentasComponent { }
+export class VentasComponent {
+  ventaService = inject(VentaService);
+  ventas = signal<Venta[]>([]);
+
+  ngOnInit() {
+    this.cargar();
+  };
+
+  cargar() {
+    //Primero el servicio con getVentas()
+  }
+}
+
