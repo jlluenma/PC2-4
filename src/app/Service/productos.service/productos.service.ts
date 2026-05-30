@@ -8,4 +8,8 @@ import { Producto } from '../../Models/Producto.model';
 export class ProductosService {
   http = inject(HttpClient);
   url = "http://localhost:3000/productos"
+
+  getProductos() {
+    return this.http.get<Producto[]>(this.url)
+  }
 }

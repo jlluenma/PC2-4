@@ -1,1 +1,22 @@
 <a [routerLink]="['']">Inicio</a>
+<h3>Lista de ventas</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(v of ventas(); track v.id){
+        <tr>
+            <td>{{ v.cliente }}</td>
+            <td>{{v.producto}}</td>
+            <td>{{v.cantidad}}</td>
+            <td>{{v.precio}}</td>
+        </tr>
+        }
+    </tbody>
+</table>

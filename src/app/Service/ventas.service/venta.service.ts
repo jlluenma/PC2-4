@@ -8,4 +8,8 @@ import { Venta } from '../../Models/Venta.model';
 export class VentaService {
   http = inject(HttpClient);
   url = "http://localhost:3000/ventas"
+
+  getVentas() {
+    return this.http.get<Venta[]>(this.url);
+  }
 }
