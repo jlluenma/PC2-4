@@ -1,4 +1,9 @@
 <a [routerLink]="['']">Inicio</a>
+<h3>Registra nueva venta</h3>
+<form [formGroup]="form()">
+    <label>Nombre Cliente <input type="text" formControlName="cliente"></label>
+</form>
+
 <h3>Lista de ventas</h3>
 <table border="1">
     <thead>
