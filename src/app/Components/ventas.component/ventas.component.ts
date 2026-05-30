@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InicioComponent } from '../inicio.component/inicio.component';
 
 @Component({
   selector: 'app-ventas.component',
@@ -6,4 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './ventas.component.html',
   styleUrl: './ventas.component.css',
 })
-export class VentasComponent {}
+export class VentasComponent { }
